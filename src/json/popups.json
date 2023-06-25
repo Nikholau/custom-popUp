@@ -1,0 +1,24 @@
+{
+  "slotMachine": {
+    "title": "PopUp Caça Níqueis",
+    "subtitle": "Caça Níqueis",
+    "formFields": {
+      "name": true,
+      "email": true,
+      "phoneNumber": true,
+      "gender": false,
+      "consent": true
+    }
+  },
+  "video": {
+    "title": "PopUp Vídeo",
+    "subtitle": "Vídeo",
+    "formFields": {
+      "name": true,
+      "email": true,
+      "phoneNumber": true,
+      "gender": true,
+      "consent": true
+    }
+  }
+}
