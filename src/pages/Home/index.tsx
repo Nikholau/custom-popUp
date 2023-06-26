@@ -9,13 +9,13 @@ const Home: React.FC = () => {
   const dispatch = useDispatch();
 
   const openPopupSlotMachines = () => {
-    const { title, subtitle } = popupConfigurations.slotMachine;
-    dispatch(openPopUp({ title, subtitle }));
+    const { title, subtitle, consent, formFields } = popupConfigurations.slotMachine;
+    dispatch(openPopUp({ title, subtitle, type: 'slotMachine', isOpen: true, consent, formFields }));
   };
   
   const openPopupVideo = () => {
-    const { title, subtitle } = popupConfigurations.video;
-    dispatch(openPopUp({ title, subtitle }));
+    const { title, subtitle, urlVideo, consent, formFields } = popupConfigurations.video;
+    dispatch(openPopUp({ title, subtitle, urlVideo, type: 'video', isOpen: true, consent, formFields }));
   };
 
   return (

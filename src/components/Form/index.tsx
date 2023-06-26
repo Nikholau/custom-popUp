@@ -15,7 +15,7 @@ interface FormData {
 }
 
 const Form: React.FC<FormProps> = ({ onSubmit }) => {
-  const popupConfig = getPopupConfig('slotMachines');
+  const popupConfig = getPopupConfig('slotMachine');
 
   const { formFields } = popupConfig;
 

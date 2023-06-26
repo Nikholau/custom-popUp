@@ -2,11 +2,11 @@
 import styled from 'styled-components';
 
 export const FormWrapper = styled.form`
-  /* Estilos para o formulário */
+  
 `;
 
 export const FormGroup = styled.div`
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 `;
 
 export const Label = styled.label`
@@ -17,11 +17,15 @@ export const Label = styled.label`
 `;
 
 export const Input = styled.input`
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 0.5rem;
   width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: transparent;
+  color: #000;
 `;
+
 
 export const Button = styled.button`
   width: 60%;

@@ -1,24 +1,27 @@
 {
   "slotMachine": {
+    "enabled": true,
     "title": "PopUp Caça Níqueis",
     "subtitle": "Caça Níqueis",
+    "consent": true,
     "formFields": {
       "name": true,
       "email": true,
-      "phoneNumber": true,
-      "gender": false,
-      "consent": true
+      "phoneNumber": false,
+      "gender": true
     }
   },
   "video": {
-    "title": "PopUp Vídeo",
-    "subtitle": "Vídeo",
+    "enabled": true,
+    "title": "Vídeo",
+    "subtitle": "Como conseguir 10x mais conversões para seu Ecommerce",
+    "urlVideo": "https://www.youtube.com/watch?v=LLcEvuWD0OI",
+    "consent": true,
     "formFields": {
       "name": true,
       "email": true,
       "phoneNumber": true,
-      "gender": true,
-      "consent": true
+      "gender": true
     }
   }
 }

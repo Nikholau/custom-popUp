@@ -6,7 +6,9 @@ import { closePopUp } from '../../store/popUpSlice';
 import Title from '../Title';
 import Subtitle from '../SubTitle';
 import Form from '../Form';
-import { CloseButton, PopUpContainer, PopUpContent } from './styles';
+import VideoPopUp from '../Video/index';
+import SlotMachine from '../SlotMachine/Index';
+import {CloseButton, PopUpContainer, PopUpContent } from './styles';
 
 const PopUp: React.FC = () => {
   const isPopUpOpen = useSelector((state: RootState) => state.popUp.isOpen);
@@ -27,6 +29,15 @@ const PopUp: React.FC = () => {
     return null;
   }
 
+  const renderPopUpContent = () => {
+    if (popUpData.type === 'video') {
+      return <VideoPopUp urlVideo={popUpData.urlVideo} />;
+    } else if (popUpData.type === 'slotMachine') {
+      return <SlotMachine />;
+    }
+    return null;
+  };
+
   return (
     <PopUpContainer onClick={handleOutsideClick}>
       <PopUpContent>
@@ -35,14 +46,11 @@ const PopUp: React.FC = () => {
         </CloseButton>
         <Title text={popUpData.title} />
         <Subtitle text={popUpData.subtitle} />
-        {/* {shouldDisplayConsent && (
-            <Checkbox id="checkbox" name="Aceita compartilhar seus dados?"/>
-      )} */}
+        {renderPopUpContent()}
         <Form onSubmit={() => console.log('foi')} />
       </PopUpContent>
     </PopUpContainer>
   );
 };
-
 
 export default PopUp;

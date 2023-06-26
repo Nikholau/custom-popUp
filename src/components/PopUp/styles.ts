@@ -18,7 +18,12 @@ export const PopUpContent = styled.div`
   background-color: #fff;
   padding: 20px;
   border-radius: 4px;
-  width: 400px;
+  width: auto;
+  max-width: 90%;
+  width: 70%;
+  max-height: 90%;
+  height: 70%;
+  overflow-y: auto;
 `;
 
 export const CloseButton = styled.button`
