@@ -1,9 +1,5 @@
-// styles.ts
 import styled from 'styled-components';
 
-export const FormWrapper = styled.form`
-  
-`;
 
 export const FormGroup = styled.div`
   margin: 1rem 0;

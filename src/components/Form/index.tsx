@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormWrapper, FormGroup, Label, Input, Button } from './styles';
+import { FormGroup, Label, Input, Button } from './styles';
 import { getPopupConfig } from '../../helpers/index';
 import Select from '../Select';
 
@@ -44,7 +44,7 @@ const Form: React.FC<FormProps> = ({ onSubmit }) => {
   };
 
   return (
-    <FormWrapper onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
       {shouldDisplayName && (
         <FormGroup>
           <Label htmlFor="name">Nome</Label>
@@ -80,7 +80,7 @@ const Form: React.FC<FormProps> = ({ onSubmit }) => {
 
 
       <Button type="submit">Enviar</Button>
-    </FormWrapper>
+    </form>
   );
 };
 
